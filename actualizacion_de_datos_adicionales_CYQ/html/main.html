@@ -1,0 +1,55 @@
+<div id="div_search" class="panel-search">
+    <div class="panel panel-primary">
+        <div class="collapse in" id="collapse_search" aria-expanded="true">
+            <div class="panel-heading">Datos adicionales de gestión judicial</div>
+            <div class="panel-body">
+                <form id='frm_busqueda'>
+
+
+                    <div class="row">
+                        <div class="form-group col-md-3 col-md-offset-1" style="margin-left:6%">
+                            <label for="c_expediente_adm">Expediente administrativo</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control input-sm text-center" name="c_expediente_adm" id="c_expediente_adm" maxlength="10" autocomplete="off">
+                            </div>
+                        </div>
+                   
+                        <div class="form-group col-md-3 col-md-offset-1" style="margin-left:6%">
+                            <label for="c_banco">Tipo de instancia:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control input-sm input-cod-short text-input" id="c_instancia" style="text-align: center;width: auto;">
+                                <input type="text" class="form-control input-sm input-desc-long" id="d_instancia" style="width: 100%;" readonly>
+                            </div>       
+                        </div>
+
+                        <div class="form-group col-md-3 col-md-offset-1">
+                            <label for="c_banco">Contribuyente:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control input-sm input-cod-short text-input" id="n_cuit_cq" style="text-align: center;width: auto;">
+                                <input type="text" class="form-control input-sm input-desc-long" id="d_denominacion_cq" style="width: 100%;" readonly>
+                            </div>       
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group text-center">
+                    <button class="btn-sm btn_limpiar" style="margin-top: 17px;" type="button" id="btn_limpiar"></button>
+                </div>
+                </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="main_grid_wrapper">
+    <table id='main_grid' class='scroll' cellpadding='0' cellspacing='0'><tr><td>&nbsp;</td></tr></table>
+    <div id='main_grid_pager' class='scroll' style='text-align:center;'></div>
+</div>
+
+<div id="observaciones_grid_wrapper">
+    <table id='observaciones_grid' class='scroll' cellpadding='0' cellspacing='0'><tr><td>&nbsp;</td></tr></table>
+    <div id='observaciones_grid_pager' class='scroll' style='text-align:center;'></div>
+</div>
